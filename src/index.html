@@ -78,9 +78,9 @@
     }
 
     .step.done {
-      background: #1a4a1a;
-      border-color: #4CAF50;
-      color: #4CAF50;
+      background: #4a1a1a;
+      border-color: #f44336;
+      color: #f44336;
     }
 
     .arrow {
@@ -126,41 +126,41 @@
 </head>
 <body>
 
-  <div class="badge">🚀 Live en AWS S3</div>
+  <div class="badge">💻 Solo en local — aún no desplegado</div>
 
   <!-- ✏️ CAMBIA ESTA LÍNEA EN LA DEMO -->
-  <h1>DevOps<br/><span>en vivo</span></h1>
+  <h1>Este archivo<br/><span>vive en mi máquina</span></h1>
 
   <p class="subtitle">
-    Este cambio viajó desde el editor hasta producción<br/>
-    de forma completamente automática.
+    Tenemos este HTML en local. Ahora vamos a usar<br/>
+    <strong>GitHub Actions</strong> para mostrar el poder del DevOps.
   </p>
 
   <div class="pipeline">
-    <div class="step done">✅ Commit</div>
+    <div class="step done">❌ Commit</div>
     <div class="arrow">→</div>
-    <div class="step done">✅ Build</div>
+    <div class="step done">❌ Build</div>
     <div class="arrow">→</div>
-    <div class="step done">✅ Test</div>
+    <div class="step done">❌ Test</div>
     <div class="arrow">→</div>
-    <div class="step done">✅ Deploy</div>
+    <div class="step done">❌ Deploy</div>
     <div class="arrow">→</div>
-    <div class="step active">🟢 Producción</div>
+    <div class="step done">❌ Producción</div>
   </div>
 
   <div class="card">
-    <h2>¿Qué acaba de pasar?</h2>
+    <h2>¿Qué vamos a demostrar?</h2>
     <p>
-      Un <strong>push a main</strong> disparó el pipeline automáticamente:
-      instaló dependencias, ejecutó 8 smoke tests, construyó el proyecto
-      y sincronizó con <strong>AWS S3</strong> — sin tocar un servidor a mano.
+      Con un simple <strong>git push</strong>, GitHub Actions va a tomar este archivo,
+      ejecutar los tests, construir el proyecto y desplegarlo en <strong>AWS S3</strong>
+      — sin intervención manual. Eso es <strong>CI/CD en acción</strong>.
     </p>
   </div>
 
   <p class="version">
     Pipeline: GitHub Actions &nbsp;·&nbsp;
     Deploy: AWS S3 &nbsp;·&nbsp;
-    Status: <span>✓ OK</span>
+    Status: <span style="color:#f44336;">✗ Pendiente</span>
   </p>
 
 </body>
