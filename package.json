@@ -1,0 +1,11 @@
+{
+  "name": "devops-demo-duoc",
+  "version": "1.0.0",
+  "description": "Demo pipeline CI/CD para clase DevOps - Duoc UC",
+  "scripts": {
+    "test": "node tests/smoke.test.js",
+    "build": "echo '✅ Build completado — copiando assets...' && cp -r src/* dist/ 2>/dev/null || true",
+    "prebuild": "mkdir -p dist"
+  },
+  "devDependencies": {}
+}
